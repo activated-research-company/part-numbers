@@ -1,9 +1,9 @@
 {
-  "name": "mithril-skeleton",
+  "name": "part-numbers",
   "version": "1.0.0",
-  "description": "ARC Web App Starter",
+  "description": "Part Number Wizard for the Polyarc System",
   "main": "index.js",
-  "repository": "https://github.com/adamlee-ARC/mithril-skeleton.git",
+  "repository": "https://github.com/adamlee-ARC/part-numbers.git",
   "author": "Adam Lee <adam.lee@activatedresearch.com>",
   "license": "MIT",
   "scripts": {
@@ -22,6 +22,7 @@
     "eslint": "^6.3.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
+    "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "ospec": "^4.0.1",
     "style-loader": "^1.0.0",

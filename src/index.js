@@ -1,4 +1,5 @@
 require('../node_modules/tachyons/css/tachyons.min.css');
+require('./index.css');
 
 const m = require('mithril');
 const home = require('./home/home');

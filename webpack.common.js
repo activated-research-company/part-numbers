@@ -15,14 +15,18 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader'],
+      },
     ],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'ARC Mithril Skeleton',
+      title: 'ARC Polyarc Wizard',
       template: './src/index.html',
-      favicon: './src/asset/favicon.ico',
+      favicon: './src/assets/favicon.ico',
     }),
   ],
   output: {
