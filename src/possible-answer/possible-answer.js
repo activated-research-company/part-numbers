@@ -27,7 +27,7 @@ function possibleAnswer() {
   }
 
   return {
-    view: (vnode) => m('div.w-80.shadow-3.mb4.f3.no-select', getPossibleAnswer(vnode.attrs.answer)),
+    view: (vnode) => m('div.w-75.shadow-3.mb3.f6.no-select', getPossibleAnswer(vnode.attrs.answer)),
   };
 }
 

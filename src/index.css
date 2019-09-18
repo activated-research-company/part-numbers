@@ -19,8 +19,8 @@ textarea {
   margin: auto;
 }
 
-.mt-10p {
-  margin-top: 10%;
+.mt-5p {
+  margin-top: 5%;
 }
 
 .bg::before {
@@ -49,6 +49,10 @@ textarea {
 }
 
 .container {
-  width: 850px;
-  height: 750px;
+  width: 650px;
+  height: 480px;
+}
+
+div { 
+	font-family: Tahoma,Verdana,Segoe,sans-serif; 
 }

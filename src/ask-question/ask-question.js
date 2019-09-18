@@ -4,9 +4,9 @@ const possibleAnswers = require('../possible-answers/possible-answers');
 
 function askQuestion() {
   return {
-    view: () => m('div.pl3.pt3.h-100',
+    view: () => m('div.pl3.pt2.h-100',
       [
-        m('div.f2.b.mb3', state.question.text), // TODO make this a component
+        m('div.f4.b.mb3', state.question.text), // TODO make this a component
         m(possibleAnswers),
       ],
     ),

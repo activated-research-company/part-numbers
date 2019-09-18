@@ -14,7 +14,7 @@ function answeredQuestions() {
   }
 
   return {
-    view: () => m('div.pl3.pt1.pr3.pb3.h-100', getAnsweredQuestions()),
+    view: () => m('div.pl3.pr3.pb3.h-100', getAnsweredQuestions()),
   };
 }
 
