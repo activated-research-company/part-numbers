@@ -22,8 +22,8 @@ function possibleAnswer() {
   }
   
   function answerSelected(answer) {
-    answer.select();
     state.question.answer = answer;
+    answer.select();
   }
 
   return {
