@@ -7,8 +7,8 @@ const paCasB07 = require('./pa-cas-b07');
 const paRrtPt1 = require('./pa-rrt-pt1');
 const paKitP44 = require('./pa-kit-p44');
 const paMfcb09 = require('./pa-mfc-b09')
-const paKitFcm = require('./pa-kit-Fcm');
-const paKitCom = require('./pa-kit-Com');
+const paKitFcm = require('./pa-kit-fcm');
+const paKitCom = require('./pa-kit-com');
 const paCotR31 = require('./pa-cot-r31');
 const paCasA09 = require('./pa-cas-a09');
 
