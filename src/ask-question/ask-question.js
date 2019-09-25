@@ -12,7 +12,7 @@ function askQuestion() {
           m('div.pb1', 'Please contact us if you have any questions.'),
           m('div.flex.pb1', [
             m('div.w-20', 'email:'),
-            m('a', { href: 'mailto: connect@activatedresearch.com' }, 'connect@activatedresearch.com'),
+            m('a', { href: 'mailto: contact@activatedresearch.com' }, 'contact@activatedresearch.com'),
           ]),
           m('div.flex', [
             m('div.w-20', 'phone:'),
