@@ -17,15 +17,12 @@ const state = {
     });
   },
   tryToAutomaticallyAnswerTheNextQuestion: function() {
-    console.log('trying to answer the next question');
     let keepGoing = true;
     questions.forEach((question) => {
-      console.log(`-- ${question.text}`);
       if (keepGoing && question.isValid()) {
         if (question.answers.length === 1 && !question.answers[0].input) {
           question.answer = question.answers[0];
           question.answer.isSelected = true;
-          console.log('---- selected answer');
           keepGoing = false;
         }
       }

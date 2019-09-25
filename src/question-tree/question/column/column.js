@@ -1,5 +1,5 @@
-const capillary = require('./answer/capillary');
-const packed = require('./answer/packed');
+const capillary = require('./answers/capillary');
+const packed = require('./answers/packed');
 const flowControl = require('../flow-control/flow-control');
 
 const question = {

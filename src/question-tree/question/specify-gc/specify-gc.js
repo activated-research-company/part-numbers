@@ -1,4 +1,4 @@
-const otherGc = require('../gc/answer/other-gc');
+const otherGc = require('../gc/answers/other-gc');
 
 const question = {
   title: "Specify GC Type",

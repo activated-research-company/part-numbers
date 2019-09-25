@@ -1,8 +1,8 @@
-const agilent5890 = require('./answer/agilent-5890');
-const agilent6890 = require('./answer/agilent-6890');
-const agilent7890 = require('./answer/agilent-7890');
-const agilent8890 = require('./answer/agilent-8890');
-const otherGc = require('./answer/other-gc');
+const agilent5890 = require('./answers/agilent-5890');
+const agilent6890 = require('./answers/agilent-6890');
+const agilent7890 = require('./answers/agilent-7890');
+const agilent8890 = require('./answers/agilent-8890');
+const otherGc = require('./answers/other-gc');
 
 const question = {
   title: "GC Type",
