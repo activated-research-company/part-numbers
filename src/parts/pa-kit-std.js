@@ -1,9 +1,10 @@
 const frontOrBackDetector = require('../question-tree/question/installation-position/answers/front-or-back-detector');
+const valveBox = require('../question-tree/question/installation-position/answers/valve-box');
 const capillary = require('../question-tree/question/column/answers/capillary');
 
 const part = {
   number: 'PA-KIT-STD',
-  applies: () => frontOrBackDetector.isSelected && capillary.isSelected,
+  applies: () => (frontOrBackDetector.isSelected || valveBox.isSelected) && capillary.isSelected,
 };
 
 module.exports = part;

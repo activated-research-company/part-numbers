@@ -4,11 +4,11 @@ const possibleAnswer = require('../possible-answer/possible-answer');
 
 function possibleAnswers() {
   function getPossibleAnswers() {
-    const possibleAnswers = [];
-    state.question.answers.forEach(answer => {
-      possibleAnswers.push(m(possibleAnswer, { answer }));
+    const answers = [];
+    state.question.answers.forEach((answer) => {
+      answers.push(m('.w-75.mb3', m(possibleAnswer, { answer })));
     });
-    return possibleAnswers;
+    return answers;
   }
 
   return {

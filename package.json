@@ -1,7 +1,7 @@
 {
   "name": "part-numbers",
   "version": "1.0.0",
-  "description": "Part Number Wizard for the Polyarc System",
+  "description": "Quote Wizard for the Polyarc System",
   "main": "index.js",
   "repository": "https://github.com/adamlee-ARC/part-numbers.git",
   "author": "Adam Lee <adam.lee@activatedresearch.com>",

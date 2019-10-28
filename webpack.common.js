@@ -24,7 +24,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'ARC Polyarc Wizard',
+      title: 'ARC Polyarc Quote Wizard',
       template: './src/index.html',
       favicon: './src/assets/favicon.ico',
     }),
