@@ -1,5 +1,8 @@
+const thermoGc = require('../../gc/answers/thermo');
+
 const answer = {
-  text: "Packed",
+  text: 'Packed',
+  isValid: () => !thermoGc.isSelected,
 };
 
 module.exports = answer;

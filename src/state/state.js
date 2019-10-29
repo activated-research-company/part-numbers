@@ -23,6 +23,7 @@ const state = {
         if (question.answers.length === 1 && !question.answers[0].input) {
           question.answer = question.answers[0];
           question.answer.isSelected = true;
+        } else {
           keepGoing = false;
         }
       }
