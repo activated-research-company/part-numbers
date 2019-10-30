@@ -3,10 +3,16 @@ const state = require('../state/state');
 
 function answeredQuestion() {
   return {
-    view: (vnode) => [
-      m('div.f7.mt2.mb2.b.shadow-3', m('a.db.pointer.pa1.no-select', { onclick: () => { state.goToQuestion(vnode.attrs.question) } }, vnode.attrs.question.title)),
-      m('div.f7', vnode.attrs.question.answer ? vnode.attrs.question.answer.text : ""),
-    ],
+    view: ({ attrs: { question }}) => m('.fade-in.pt1', [
+      m('.f7.mt2.mb2.b.shadow-3', m('a.db.pointer.pa1.no-select', { onclick: () => { state.goToQuestion(question) } }, question.title)),
+      m('.f7', question.answer ? question.answer.text : ''),
+    ]),
+    onbeforeremove: ({ dom }) => {
+      dom.classList.add('fade-out');
+      return new Promise((resolve) => {
+        dom.addEventListener('animationend', resolve);
+      });
+    }
   };
 }
 

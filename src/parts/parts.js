@@ -18,8 +18,10 @@ const paKitThr = require('./pa-kit-thr');
 const paKitCom = require('./pa-kit-com');
 const paPltVlv = require('./pa-plt-vlv');
 const paHtrCtr = require('./pa-htr-ctr');
-const paCotR31 = require('./pa-cot-r31');
 const paCasA09 = require('./pa-cas-a09');
+const paCasA12 = require('./pa-cas-a12');
+const paCasA16 = require('./pa-cas-a16');
+const paCotR31 = require('./pa-cot-r31');
 
 const parts = [
   paSysEfc,
@@ -42,8 +44,10 @@ const parts = [
   paKitCom,
   paPltVlv,
   paHtrCtr,
-  paCotR31,
   paCasA09,
+  paCasA12,
+  paCasA16,
+  paCotR31,
 ];
 
 module.exports = parts;

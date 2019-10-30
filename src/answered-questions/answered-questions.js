@@ -4,13 +4,13 @@ const answeredQuestion = require('../answered-question/answered-question');
 
 function answeredQuestions() {
   function getAnsweredQuestions() {
-    const answeredQuestions = [];
+    const questions = [];
     state.questions.forEach((question) => {
-      if(question.answer) {
-        answeredQuestions.push(m(answeredQuestion, { question }));
+      if (question.answer) {
+        questions.push(m(answeredQuestion, { question }));
       }
     });
-    return answeredQuestions;
+    return questions;
   }
 
   return {
