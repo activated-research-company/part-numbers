@@ -1,7 +1,7 @@
 const thermo = require('../../gc/answers/thermo');
 
 const answer = {
-  text: 'Detector',
+  text: 'Detector Position',
   isValid: () => thermo.isSelected,
 };
 
