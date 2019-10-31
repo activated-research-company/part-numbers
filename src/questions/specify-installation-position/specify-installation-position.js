@@ -1,8 +1,8 @@
 const other = require('../installation-position/answers/other');
 
 const question = {
-  title: "Specify GC Type",
-  text: "Please specify the installation position you will be using:",
+  title: 'Specify Install Position',
+  text: 'Please specify the installation position you will be using:',
   allAnswers: [
     {
       input: true,
