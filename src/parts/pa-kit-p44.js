@@ -1,8 +1,8 @@
-const frontOrBackDetector = require('../question-tree/question/installation-position/answers/front-or-back-detector');
-const valveBox = require('../question-tree/question/installation-position/answers/valve-box');
-const a6890 = require('../question-tree/question/gc/answers/agilent-6890');
-const auxillaryDetector = require('../question-tree/question/installation-position/answers/auxillary-detector');
-const packed = require('../question-tree/question/column/answers/packed');
+const frontOrBackDetector = require('../questions/installation-position/answers/front-or-back-detector');
+const valveBox = require('../questions/installation-position/answers/valve-box');
+const a6890 = require('../questions/gc/answers/agilent-6890');
+const auxillaryDetector = require('../questions/installation-position/answers/auxillary-detector');
+const packed = require('../questions/column/answers/packed');
 
 const part = {
   number: 'PA-KIT-P44',

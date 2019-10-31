@@ -1,4 +1,4 @@
-const valveBox = require('../question-tree/question/installation-position/answers/valve-box');
+const valveBox = require('../questions/installation-position/answers/valve-box');
 
 const part = {
   number: 'PA-PLT-VLV',

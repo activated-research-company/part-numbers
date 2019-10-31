@@ -1,5 +1,5 @@
-const thermoEnclosure = require('../question-tree/question/installation-position/answers/thermo');
-const capillary = require('../question-tree/question/column/answers/capillary');
+const thermoEnclosure = require('../questions/installation-position/answers/thermo');
+const capillary = require('../questions/column/answers/capillary');
 
 const part = {
   number: 'PA-KIT-THR',

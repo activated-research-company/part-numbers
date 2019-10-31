@@ -1,5 +1,5 @@
-const valveBox = require('../question-tree/question/installation-position/answers/valve-box')
-const noExistingCable = require('../question-tree/question/temperature-control/answers/no-existing-cable');
+const valveBox = require('../questions/installation-position/answers/valve-box')
+const noExistingCable = require('../questions/temperature-control/answers/no-existing-cable');
 
 const part = {
   number: 'PA-CAS-A12',

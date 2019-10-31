@@ -1,8 +1,8 @@
-const a6890 = require('../question-tree/question/gc/answers/agilent-6890');
-const frontOrBackDetector = require('../question-tree/question/installation-position/answers/front-or-back-detector');
-const valveBox = require('../question-tree/question/installation-position/answers/valve-box');
-const auxillaryDetector = require('../question-tree/question/installation-position/answers/auxillary-detector');
-const capillary = require('../question-tree/question/column/answers/capillary');
+const a6890 = require('../questions/gc/answers/agilent-6890');
+const frontOrBackDetector = require('../questions/installation-position/answers/front-or-back-detector');
+const valveBox = require('../questions/installation-position/answers/valve-box');
+const auxillaryDetector = require('../questions/installation-position/answers/auxillary-detector');
+const capillary = require('../questions/column/answers/capillary');
 
 const part = {
   number: 'PA-SUB-42D',
