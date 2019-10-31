@@ -5,11 +5,11 @@ const auxillaryDetector = require('./auxillary-detector');
 const thermo = require('./thermo');
 const other = require('./other');
 
-module.exports = [
+module.exports = {
   frontOrBackDetector,
   frontOrBackInlet,
   valveBox,
   auxillaryDetector,
   thermo,
   other,
-];
+};

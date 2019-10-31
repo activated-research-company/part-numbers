@@ -1,8 +1,8 @@
-const thermo = require('../../gc/answers/thermo');
+const other = require('../../gc/answers/other-gc');
 
 const answer = {
   text: 'Other',
-  isValid: () => !thermo.isSelected,
+  isValid: () => other.isSelected,
 };
 
 module.exports = answer;

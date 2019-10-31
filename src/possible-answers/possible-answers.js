@@ -1,7 +1,4 @@
-const m = require('mithril');
-const possibleAnswer = require('../possible-answer/possible-answer');
-
-function possibleAnswers() {
+function possibleAnswers(m, possibleAnswer) {
   function getPossibleAnswers(question) {
     const answers = [];
     question.answers.forEach((answer) => {

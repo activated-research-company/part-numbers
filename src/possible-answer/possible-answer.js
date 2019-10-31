@@ -1,6 +1,4 @@
-const m = require('mithril');
-
-function possibleAnswer() {
+function possibleAnswer(m) {
   function getPossibleAnswer(question, answer) {
     if (!answer.input) {
       return m('a.db.pointer.pa1', { onclick: () => { question.setAnswer(answer); } }, answer.text);

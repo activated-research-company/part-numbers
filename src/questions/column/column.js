@@ -1,17 +1,13 @@
-const capillary = require('./answers/capillary');
-const packed = require('./answers/packed');
-const flowControl = require('../flow-control/flow-control');
-
-const question = {
-  title: "Column Type",
-  text: "What type of column will be used?",
-  allAnswers: [
-    capillary,
-    packed,
-  ],
-  isValid: function() {
+function question(flowControl) {
+  function isValid() {
     return !this.answer && flowControl.answer;
-  },
-};
+  }
+
+  return {
+    title: 'Column Type',
+    text: 'What type of column will be used?',
+    isValid,
+  };
+}
 
 module.exports = question;

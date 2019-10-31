@@ -1,8 +1,4 @@
-const m = require('mithril');
-const button = require('../button/button');
-const parts = require('../parts/parts');
-
-function partNumbers() {
+function partNumbers(m, button, parts) {
 
   function partApplies(part) {
     return part.applies();

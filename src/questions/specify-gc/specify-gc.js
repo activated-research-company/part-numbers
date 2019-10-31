@@ -1,16 +1,18 @@
-const otherGc = require('../gc/answers/other-gc');
+function question(gcType) {
+  function isValid() {
+    return !this.answer && gcType.otherGc.isSelected;
+  }
 
-const question = {
-  title: "Specify GC Type",
-  text: "Please specify the GC you will be using:",
-  allAnswers: [
-    {
-      input: true,
-    }
-  ],
-  isValid: function() {
-    return !this.answer && otherGc.isSelected
-  },
-};
+  return {
+    title: 'Specify GC Type',
+    text: 'Please specify the GC you will be using:',
+    allAnswers: [
+      {
+        input: true,
+      },
+    ],
+    isValid,
+  };
+}
 
 module.exports = question;

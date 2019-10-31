@@ -3,7 +3,6 @@ const paSysMfc = require('./pa-sys-mfc');
 const paSysNfc = require('./pa-sys-nfc');
 const paSub42d = require('./pa-sub-42d');
 const paSub43t = require('./pa-sub-43t');
-const thermoThermoPacked = require('./thermo-thermo-packed');
 const paKitStd = require('./pa-kit-std');
 const paRrtPt1 = require('./pa-rrt-pt1');
 const paKitP44 = require('./pa-kit-p44');
@@ -29,7 +28,6 @@ const parts = [
   paSysNfc,
   paSub42d,
   paSub43t,
-  thermoThermoPacked,
   paKitStd,
   paKitThr,
   paRrtPt1,
