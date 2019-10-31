@@ -1,20 +1,16 @@
-const m = require('mithril');
-const state = require('../state/state');
-const answeredQuestion = require('../answered-question/answered-question');
-
-function answeredQuestions() {
+function answeredQuestions(m, answeredQuestion, questionService) {
   function getAnsweredQuestions() {
     const questions = [];
-    state.questions.forEach((question) => {
+    questionService.questions.forEach((question) => {
       if (question.answer) {
-        questions.push(m(answeredQuestion, { question }));
+        questions.push(m(answeredQuestion, { question, questionService }));
       }
     });
     return questions;
   }
 
   return {
-    view: () => m('div.pl3.pr3.pb3.h-100', getAnsweredQuestions()),
+    view: () => m('.pl3.pr3.pb3.h-100', getAnsweredQuestions()),
   };
 }
 

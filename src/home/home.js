@@ -1,19 +1,15 @@
-const m = require('mithril');
-const state = require('../state/state');
-const answeredQuestions = require('../answered-questions/answered-questions');
-const askQuestion = require('../ask-question/ask-question');
-const partNumbers = require('../part-numbers/part-numbers');
-
-function home() {
+function home(
+  m,
+  questionService,
+  answeredQuestions,
+  askQuestion,
+  partNumbers,
+) {
   return {
-    view: () => m('div.bg',
-      m('div.container.ma-auto.flex',
-        [
-          m('div.w-30.mt-5p.bg-moon-gray.o-90.shadow-3', m(answeredQuestions)),
-          m('div.w-70.mt-5p.bg-white.o-90.center.shadow-3', m(state.question ? askQuestion : partNumbers)),
-        ],
-      ),
-    ),
+    view: () => [
+      m('.w-30.bg-moon-gray', m(answeredQuestions)),
+      m('.w-70.bg-white.center', m(questionService.question ? askQuestion : partNumbers)),
+    ],
   };
 }
 

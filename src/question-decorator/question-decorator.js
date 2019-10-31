@@ -2,11 +2,20 @@ const answerDecorator = require('../answer-decorator/answer-decorator');
 
 module.exports = {
   decorate: (question) => {
-    Object.defineProperty(question, 'answers', {
-      get: function() {
-        return question.allAnswers.filter(answer => !answer.isValid || answer.isValid());
-      },
+    const decoratedQuestion = question;
+    Object.defineProperty(decoratedQuestion, 'answers', {
+      get: () => decoratedQuestion.allAnswers.filter((answer) => {
+        return !answer.isValid || answer.isValid();
+      }),
     });
-    question.allAnswers.forEach((answer) => { answerDecorator.decorate(answer); });
+    decoratedQuestion.setAnswer = (answer) => {
+      decoratedQuestion.answer = answer;
+      answer.select();
+    };
+    decoratedQuestion.clearAnswer = () => {
+      decoratedQuestion.answer.deselect();
+      decoratedQuestion.answer = null;
+    };
+    decoratedQuestion.allAnswers.forEach((answer) => { answerDecorator.decorate(answer); });
   }
 };

@@ -2,7 +2,7 @@
   "name": "part-numbers",
   "version": "1.0.0",
   "description": "Quote Wizard for the Polyarc System",
-  "main": "index.js",
+  "main": "route.js",
   "repository": "https://github.com/adamlee-ARC/part-numbers.git",
   "author": "Adam Lee <adam.lee@activatedresearch.com>",
   "license": "MIT",

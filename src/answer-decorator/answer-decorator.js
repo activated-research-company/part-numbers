@@ -7,5 +7,9 @@ module.exports = {
       decoratedAnswer.isSelected = true;
       eventEmitter.emit('answerselected', decoratedAnswer);
     };
+    decoratedAnswer.deselect = () => {
+      decoratedAnswer.isSelected = false;
+      eventEmitter.emit('answerdeselected', decoratedAnswer);
+    };
   },
 };
