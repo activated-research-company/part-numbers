@@ -1,7 +1,7 @@
 const eventEmitter = require('../event-emitter/event-emitter');
 
-module.exports = {
-  decorate: (answer) => {
+function answerDecorator() {
+  function decorate(answer) {
     const decoratedAnswer = answer;
     decoratedAnswer.select = () => {
       decoratedAnswer.isSelected = true;
@@ -11,5 +11,11 @@ module.exports = {
       decoratedAnswer.isSelected = false;
       eventEmitter.emit('answerdeselected', decoratedAnswer);
     };
-  },
-};
+  }
+
+  return {
+    decorate,
+  };
+}
+
+module.exports = answerDecorator;

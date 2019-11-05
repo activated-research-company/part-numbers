@@ -1,5 +1,5 @@
 const answer = {
-  text: "Other",
+  text: 'Other',
 };
 
 module.exports = answer;

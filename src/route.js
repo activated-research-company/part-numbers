@@ -9,10 +9,11 @@ const answeredQuestion = require('./answered-question/answered-question')(m, que
 const answeredQuestions = require('./answered-questions/answered-questions')(m, answeredQuestion, questionService);
 const possibleAnswer = require('./possible-answer/possible-answer')(m);
 const possibleAnswers = require('./possible-answers/possible-answers')(m, possibleAnswer);
-const askQuestion = require('./ask-question/ask-question')(m, possibleAnswers, questionService);
+const contact = require('./contact/contact')(m);
+const askQuestion = require('./ask-question/ask-question')(m, possibleAnswers, questionService, contact);
 const button = require('./button/button')(m);
 const parts = require('./parts/parts');
-const partNumbers = require('./part-numbers/part-numbers')(m, button, parts);
+const partNumbers = require('./part-numbers/part-numbers')(m, button, parts, contact);
 const home = require('./home/home')(m, questionService, answeredQuestions, askQuestion, partNumbers);
 
 m.route(document.body, '/', {

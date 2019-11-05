@@ -1,12 +1,7 @@
-function question(flowControl) {
-  function isValid() {
-    return !this.answer && flowControl.answer;
-  }
-
+function question() {
   return {
     title: 'Column Type',
     text: 'What type of column will be used?',
-    isValid,
   };
 }
 

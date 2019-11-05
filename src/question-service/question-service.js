@@ -1,10 +1,10 @@
 function questionService(questions) {
-  function questionIsValid(question) {
-    return question.isValid();
+  function questionHasNotBeenAnswered(question) {
+    return !question.answer;
   }
 
   function getCurrentQuestion() {
-    return questions.find(questionIsValid);
+    return questions.find(questionHasNotBeenAnswered);
   }
 
   function setNextQuestion(nextQuestion) {

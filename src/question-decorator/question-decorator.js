@@ -1,12 +1,9 @@
-const answerDecorator = require('../answer-decorator/answer-decorator');
+function questionDecorator(answerDecorator) {
 
-module.exports = {
-  decorate: (question, answers) => {
+  function decorate(question, answers) {
     const decoratedQuestion = question;
-    if (answers) {
-      decoratedQuestion.allAnswers = Object.values(answers);
-      Object.assign(decoratedQuestion, answers);
-    }
+    decoratedQuestion.allAnswers = Object.values(answers);
+    Object.assign(decoratedQuestion, answers);
     Object.defineProperty(decoratedQuestion, 'answers', {
       get: () => decoratedQuestion.allAnswers.filter((answer) => !answer.isValid || answer.isValid()),
     });
@@ -19,5 +16,12 @@ module.exports = {
       decoratedQuestion.answer = null;
     };
     decoratedQuestion.allAnswers.forEach((answer) => { answerDecorator.decorate(answer); });
-  },
-};
+    return this;
+  }
+
+  return {
+    decorate,
+  };
+}
+
+module.exports = questionDecorator;
