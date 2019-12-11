@@ -17,6 +17,8 @@ const paKitThr = require('./pa-kit-thr');
 const paKitCom = require('./pa-kit-com');
 const paPltVlv = require('./pa-plt-vlv');
 const paHtrCtr = require('./pa-htr-ctr');
+const paExtA12 = require('./pa-ext-a12');
+const paExtA13 = require('./pa-ext-a13');
 const paCasA09 = require('./pa-cas-a09');
 const paCasA12 = require('./pa-cas-a12');
 const paCasA16 = require('./pa-cas-a16');
@@ -42,6 +44,8 @@ const parts = [
   paKitCom,
   paPltVlv,
   paHtrCtr,
+  paExtA12,
+  paExtA13,
   paCasA09,
   paCasA12,
   paCasA16,
