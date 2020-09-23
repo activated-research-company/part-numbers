@@ -1,5 +1,5 @@
 const answer = {
-  text: "Agilent 8890",
+  text: 'Agilent 8890',
 };
 
 module.exports = answer;

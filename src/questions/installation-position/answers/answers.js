@@ -3,6 +3,7 @@ const frontOrBackInlet = require('./front-or-back-inlet');
 const valveBox = require('./valve-box');
 const auxillaryDetector = require('./auxillary-detector');
 const thermo = require('./thermo');
+const shimadzuInlet = require('./shimadzu-inlet');
 
 module.exports = {
   frontOrBackDetector,
@@ -10,4 +11,5 @@ module.exports = {
   valveBox,
   auxillaryDetector,
   thermo,
+  shimadzuInlet,
 };

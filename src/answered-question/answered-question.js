@@ -9,7 +9,7 @@ function answeredQuestion(m, questionService) {
       return new Promise((resolve) => {
         dom.addEventListener('animationend', resolve);
       });
-    }
+    },
   };
 }
 

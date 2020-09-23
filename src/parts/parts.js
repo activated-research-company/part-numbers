@@ -2,13 +2,16 @@ const paSysEfc = require('./pa-sys-efc');
 const paSysMfc = require('./pa-sys-mfc');
 const paSysNfc = require('./pa-sys-nfc');
 const paSub42d = require('./pa-sub-42d');
+const paSub43s = require('./pa-sub-43s');
 const paSub43t = require('./pa-sub-43t');
 const paKitStd = require('./pa-kit-std');
 const paRrtPt1 = require('./pa-rrt-pt1');
 const paKitP44 = require('./pa-kit-p44');
+const paKitShz = require('./pa-kit-shz');
 const paSub42z = require('./pa-sub-42z');
 const paKitInl = require('./pa-kit-inl');
 const paRrtPt2 = require('./pa-rrt-pt2');
+const paRrtPt4 = require('./pa-rrt-pt4');
 const paKitP46 = require('./pa-kit-p46');
 const paCasB07 = require('./pa-cas-b07');
 const paMfcB09 = require('./pa-mfc-b09');
@@ -29,14 +32,17 @@ const parts = [
   paSysMfc,
   paSysNfc,
   paSub42d,
+  paSub43s,
   paSub43t,
   paKitStd,
   paKitThr,
   paRrtPt1,
   paKitP44,
+  paKitShz,
   paSub42z,
   paKitInl,
   paRrtPt2,
+  paRrtPt4,
   paKitP46,
   paCasB07,
   paMfcB09,

@@ -1,4 +1,4 @@
-const valveBox = require('../questions/installation-position/answers/valve-box')
+const valveBox = require('../questions/installation-position/answers/valve-box');
 const noExistingCable = require('../questions/temperature-control/answers/no-existing-cable');
 
 const part = {
