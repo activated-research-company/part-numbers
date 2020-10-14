@@ -1,5 +1,5 @@
 const answer = {
-  text: 'Thermo',
+  text: 'Thermo Trace 1310',
 };
 
 module.exports = answer;
