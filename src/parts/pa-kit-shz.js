@@ -3,7 +3,7 @@ const capillary = require('../questions/column/answers/capillary');
 
 const part = {
   number: 'PA-KIT-SHZ',
-  applies: () => shimadzuInlet && capillary.isSelected,
+  applies: () => shimadzuInlet.isSelected && capillary.isSelected,
 };
 
 module.exports = part;
